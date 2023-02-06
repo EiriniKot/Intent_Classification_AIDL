@@ -1,0 +1,14 @@
+pandas
+sklearn
+nltk
+matplotlib
+seaborn
+huggingface-hub
+transformers
+tensorflow
+wget
+streamlit
+torchserve
+torch-model-archiver
+httpx
+torchtext
