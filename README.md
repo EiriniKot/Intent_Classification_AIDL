@@ -12,6 +12,20 @@ The basic tools for ML where Pytorch + HuggingFace
 This Notebook includes an implementation with huggingface pretrained transformers
 https://colab.research.google.com/drive/1lhT-oEr5RdUD8HjpHGWVHHbyyUrxjWgw?usp=sharing
 
+You can open one of them and do the trainings.
+You can also find results in my gdrive:
+
+
+Output Files :
+
+[Here](https://drive.google.com/drive/folders/1TQMY_o1vUo3wzhGZDP107kP1BcNB7bf7?usp=sharing) is the lstm and the PretrainedEmb model in tensorflow:
+
+[Here](https://drive.google.com/drive/folders/1APnl9eKgSwPFTp9pR6TDoU87RhykzmuS?usp=sharing) is huggingface transformers models:
+
+[Here](https://drive.google.com/drive/folders/1icVLBMryI-TJYI1RTISAy4eIEKPvZPC9?usp=sharing) are the results metrics plots for transformers and all the metrics in a csv: 
+
+Here you can find the mar file:
+!!!!!!
 
 
 # Torch Serve
