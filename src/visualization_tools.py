@@ -4,6 +4,10 @@ import numpy as np
 from sklearn.metrics import ConfusionMatrixDisplay
 
 def plot_metric_graph(history, metric=''):
+    """
+    Pass a tensorflow history object and the metric you want to plot during
+    epochs.
+    """
     # summarize history for loss
     plt.plot(history.history[metric])
     plt.plot(history.history['val_'+ metric])
@@ -15,6 +19,11 @@ def plot_metric_graph(history, metric=''):
 
 
 def plot_label_count(data, target_col = ''):
+    """
+    Plot for labels counting. Good tool for understand label distribution
+    :param data: pd.Dataframe Data dataframe
+    :param target_col: str . Column name of dataframe that contains the labels.
+    """
     ax = sns.countplot(x=target_col, data = data, palette = 'Set3')
     ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
     plt.tight_layout()
@@ -22,6 +31,14 @@ def plot_label_count(data, target_col = ''):
 
 
 def plot_results(results, confusion, label_names, plot_title='', save=False):
+    """
+    Two sided Plot for  results.
+    :param results: dict Dictionary with metric names and values of them
+    :param confusion: confusion matrix from sklearn
+    :param label_names: list , Label names
+    :param plot_title: str Name of the title of image
+    :param save : bool Save png or not
+    """
     num = len(results)
     percentages = list(results.values())
     percentages = np.array(percentages) * 100
