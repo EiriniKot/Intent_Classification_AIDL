@@ -11,6 +11,8 @@ The basic tools for ML where Tensorflow + Tensorflow hub
 This [Notebook](https://colab.research.google.com/drive/1lhT-oEr5RdUD8HjpHGWVHHbyyUrxjWgw?usp=sharing
 ) includes an implementation with huggingface pretrained transformers. The basic tools for ML where Pytorch + HuggingFace
 
+[Here](https://docs.google.com/presentation/d/1BobRXmuEhCJZTBXd8EN5QFzR8-QbFC07GIrZaXQg8ec/edit?usp=sharing) you can find the presentation for this project
+
 You can open one of them and do the trainings.
 You can also find results in my gdrive:
 
