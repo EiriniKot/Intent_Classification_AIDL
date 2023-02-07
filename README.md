@@ -4,17 +4,15 @@ Project for NLP course 2022-2023 AIDL.
 Using a custom dataset, classify Questions as samples into some categories
 Task : Multiclass
 
-This Notebook includes an implementation with a custom LSTM and pretrained embeddings.
+This [Notebook](https://colab.research.google.com/drive/18qh9-yzfDO9WKemmgcZQN4rHuLbuje2o?usp=sharing
+) includes an implementation with a custom LSTM and pretrained embeddings.
 The basic tools for ML where Tensorflow + Tensorflow hub
-https://colab.research.google.com/drive/18qh9-yzfDO9WKemmgcZQN4rHuLbuje2o?usp=sharing
 
-The basic tools for ML where Pytorch + HuggingFace
-This Notebook includes an implementation with huggingface pretrained transformers
-https://colab.research.google.com/drive/1lhT-oEr5RdUD8HjpHGWVHHbyyUrxjWgw?usp=sharing
+This [Notebook](https://colab.research.google.com/drive/1lhT-oEr5RdUD8HjpHGWVHHbyyUrxjWgw?usp=sharing
+) includes an implementation with huggingface pretrained transformers. The basic tools for ML where Pytorch + HuggingFace
 
 You can open one of them and do the trainings.
 You can also find results in my gdrive:
-
 
 Output Files :
 
