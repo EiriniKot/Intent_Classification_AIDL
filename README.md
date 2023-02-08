@@ -24,15 +24,14 @@ Output Files :
 
 [Here](https://drive.google.com/drive/folders/1icVLBMryI-TJYI1RTISAy4eIEKPvZPC9?usp=sharing) are the results metrics plots for transformers and all the metrics in a csv: 
 
-Here you can find the mar file:
-!!!!!!
-
 
 # Torch Serve
 
+Here you can see the full steps if you want to skip some of those you can find [here](https://drive.google.com/file/d/1mOtx-0lGSr2GLJ_shWANBMnQVwrHEHi4/view?usp=sharing) the .mar (roberta-base) and skip command 2 and 3:
+
 Create a conda environment with python 3.10 (it may also work in other python versions but I have not tested in other versions)
 
-Install all the requirements using this command :
+1. Install all the requirements using this command :
 ```
 pip install -r requirements.txt
 ```
@@ -40,36 +39,48 @@ pip install -r requirements.txt
 Run this in your current conda env:
 conda install -c pytorch torchserve torch-model-archiver torch-workflow-archiver
 
-Run this on terminal
+2. Run this on terminal if you have your model (Plz update with your model path after model/ , the example is with roberta)
 ```
-torch-model-archiver --model-name "irini_bert" \
-                     --version 1.0 --serialized-file ./model/distilbert-base-uncased/pytorch_model.bin \
-                     --extra-files "./model/distilbert-base-uncased/config.json, ./model/index_to_name.json, ./src/preprocessing_tools.py" \
+torch-model-archiver --model-name "roberta_intent" \
+                     --version 1.0 --serialized-file ./model/roberta-base-20230208T123209Z-001/roberta-base/pytorch_model.bin \
+                     --extra-files "./model/roberta-base-20230208T123209Z-001/roberta-base/config.json, ./model/index_to_name.json, ./src/preprocessing_tools.py" \
                      --handler "./app/handler.py"
 ```
 The previous command will produce a file named eirini_roberta.mar 
 that can be understood by TorchServe. 
 If you want to change the name of the model change eirini_roberta 
-to what you like most. Then move this mar file into deployment/model-store folder
+to what you like most. 
+3. Then move this mar file into deployment/model-store folder (make sure there is model-store folder)
 
 ```
-mv irini_bert.mar ./deployment/model-store 
+mv roberta_intent.mar ./deployment/model-store 
 ```
 
-Now it is time for torch serve
+4. Now it is time for torch serve
 
 ```
 torchserve  --start \
             --model-store  ./deployment/model-store \
             --ts-config ./deployment/config.properties \
-            --models irini_bert=irini_bert.mar
+            --models irini_bert=roberta_intent.mar
 ```
 
-Finally ping in port and the status should be healthy
+5. Finally ping in port and the status should be healthy
 
 ```
 curl http://localhost:8080/ping
 ```
 
-References:
-medium.com/analytics-vidhya/deploy-huggingface-s-bert-to-production-with-pytorch-serve-27b068026d18
+# Streamlit
+
+You can use the served model by running 
+
+```
+streamlit run app/main.py
+```
+
+Finally you can
+
+```
+torchserve --stop
+```
