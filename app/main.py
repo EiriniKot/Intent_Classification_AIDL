@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import random
 
-endpoint = "http://localhost:8080/predictions/irini_bert"
+endpoint = "http://localhost:8080/predictions/roberta_intent"
 
 general_link = f'https://aidl.uniwa.gr/'
 

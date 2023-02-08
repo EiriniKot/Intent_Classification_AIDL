@@ -35,7 +35,7 @@ class TransformersClassifierHandler(BaseHandler, ABC):
         # hard coded for now
         self.preprocess_tool = PreProcessText(**{'tokenization':
                                           {'source': 'huggingface',
-                                           'config': {'tokenizer': 'distilbert-base-uncased',
+                                           'config': {'tokenizer': 'roberta-base',
                                                       'auto':True,
                                                       'location': 'transformers',
                                                       'kwargs':{'padding':'max_length',
