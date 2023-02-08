@@ -27,8 +27,8 @@ json_answers = {"Applications": [('I see, I think what you are looking for is in
                 "Schedule": [('I guess you are looking for the schedule so there you go!', f'{general_link}course-schedule/'),
                              'For the schedule you can search here', f'{general_link}course-schedule/']}
 
-# Define a function to get predictions from the API
 def get_prediction(input_data):
+    """get predictions from api, return a response"""
     response = requests.post(endpoint, data={'body': input_data})
     response_b = response.content.decode()
     return response_b
@@ -36,8 +36,9 @@ def get_prediction(input_data):
 
 if __name__ == "__main__":
     st.set_page_config(page_title="Chatbot", page_icon=":robot_face:", layout="wide")
-    st.title('Welcome to student information chatbox!')
+
     st.image('https://aidl.uniwa.gr/wp-content/uploads/2021/03/cropped-newLogo_1-180x45_trans_ar.png', width=300)
+    st.title('Welcome to student information chatbox!')
 
     user_input = st.text_input("Enter your message:")
     if st.button('Send'):
@@ -49,21 +50,25 @@ if __name__ == "__main__":
     else:
         answer = ''
 
-    st.write("Prediction Results:")
+    st.write('<p style="font-size:20px; color:white;">Prediction Results:</p>',
+             unsafe_allow_html=True)
     st.write(answer)
 
     st.markdown("""
-        <style>
-            .stMarkdown h1, h2, h3, h4, h5, h6 {
-                text-align: left;
-                color: #fff;
-                font-size: 20px;
-            }
-            .stMarkdown {
-                background-color: #333;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-        </style>
-        """, unsafe_allow_html=True)
+            <style>
+                .stMarkdown h1, h2, h3, h4, h5, h6 {
+                    text-align: left;
+                    color: #fff;
+                    font-size: 23px;
+                }
+                .stMarkdown {
+                    background-color: rgba(160,240,250,0.7);
+                    padding: 13px;
+                    border-radius: 13px;
+                    margin-bottom: 13px;
+                }
+                .title {
+                text-align: center;
+                }
+            </style>
+            """, unsafe_allow_html=True)
