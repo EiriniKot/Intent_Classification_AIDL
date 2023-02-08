@@ -62,7 +62,7 @@ mv roberta_intent.mar ./deployment/model-store
 torchserve  --start \
             --model-store  ./deployment/model-store \
             --ts-config ./deployment/config.properties \
-            --models irini_bert=roberta_intent.mar
+            --models roberta_intent=roberta_intent.mar
 ```
 
 5. Finally ping in port and the status should be healthy

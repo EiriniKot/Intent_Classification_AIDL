@@ -1,0 +1,15 @@
+2023-02-08T14:59:50,889 - CPUUtilization.Percent:0.0|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T14:59:50,890 - DiskAvailable.Gigabytes:263.68565368652344|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T14:59:50,891 - DiskUsage.Gigabytes:180.3663787841797|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T14:59:50,891 - DiskUtilization.Percent:40.6|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T14:59:50,891 - MemoryAvailable.Megabytes:6187.22265625|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T14:59:50,891 - MemoryUsed.Megabytes:7243.62890625|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T14:59:50,891 - MemoryUtilization.Percent:55.3|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861190
+2023-02-08T15:00:39,836 - Requests2XX.Count:1|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861239
+2023-02-08T15:00:50,885 - CPUUtilization.Percent:0.0|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
+2023-02-08T15:00:50,885 - DiskAvailable.Gigabytes:263.68517303466797|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
+2023-02-08T15:00:50,885 - DiskUsage.Gigabytes:180.36685943603516|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
+2023-02-08T15:00:50,886 - DiskUtilization.Percent:40.6|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
+2023-02-08T15:00:50,886 - MemoryAvailable.Megabytes:6216.5859375|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
+2023-02-08T15:00:50,886 - MemoryUsed.Megabytes:7210.9375|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
+2023-02-08T15:00:50,886 - MemoryUtilization.Percent:55.1|#Level:Host|#hostname:eirini-IdeaPad-3-15ALC6,timestamp:1675861250
