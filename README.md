@@ -24,10 +24,10 @@ Output Files :
 
 [Here](https://drive.google.com/drive/folders/1icVLBMryI-TJYI1RTISAy4eIEKPvZPC9?usp=sharing) are the results metrics plots for transformers and all the metrics in a csv: 
 
+[.mar](https://drive.google.com/file/d/1mOtx-0lGSr2GLJ_shWANBMnQVwrHEHi4/view?usp=sharing)
+
 
 # Torch Serve
-
-Here you can see the full steps if you want to skip some of those you can find [here](https://drive.google.com/file/d/1mOtx-0lGSr2GLJ_shWANBMnQVwrHEHi4/view?usp=sharing) the .mar (roberta-base) and skip command 2 and 3:
 
 Create a conda environment with python 3.10 (it may also work in other python versions but I have not tested in other versions)
 
